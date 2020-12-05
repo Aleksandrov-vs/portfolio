@@ -56,7 +56,7 @@
                 _set_deletable($(this), options);
                 // add addable behaviour to dashboard panel items
                 _set_addable($(this), options);
-                // restore user preferences
+                // restore users preferences
                 _restore_preferences($(this), options);
             });
         }

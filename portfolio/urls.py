@@ -20,6 +20,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     url(r'^admin_tools/', include('admin_tools.urls')),
+    path('grappelli/', include('grappelli.urls')),  # grappelli URLS
     path('admin/', admin.site.urls),
     url(r'^markdownx/', include('markdownx.urls')),
     url('works', include('works.urls')),

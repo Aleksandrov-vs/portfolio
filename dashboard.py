@@ -15,6 +15,8 @@ from django.urls import reverse
 
 from admin_tools.dashboard import modules, Dashboard, AppIndexDashboard
 from admin_tools.utils import get_admin_site_name
+# from .contact_information.models import ContactInformation
+# from .works.models import Work
 
 
 class CustomIndexDashboard(Dashboard):
@@ -37,11 +39,11 @@ class CustomIndexDashboard(Dashboard):
         #         [_('Log out'), reverse('%s:logout' % site_name)],
         #     ]
         # ))
-
         # append an app list module for "Applications"
         self.children.append(modules.AppList(
-            _('Applications'),
-            exclude=('django.contrib.*',),
+            title='Applicationerres',
+            # models=('Work', 'ContactInformation'),
+            models=['works.models.Work', 'contact_information.models.ContactInformation'],
         ))
 
         # append an app list module for "Administration"

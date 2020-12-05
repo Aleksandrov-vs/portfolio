@@ -12,7 +12,7 @@
     background: #205067;
 
     /* Reset the indents of django-flat-theme
-      (need to restore 40px on branding+user-tools instead) */
+      (need to restore 40px on branding+users-tools instead) */
     padding-left: 0;
     padding-right: 0;
 }
